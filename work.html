@@ -5,7 +5,13 @@
   <meta charset="utf-8">
   <meta name="Olya Skachkov portfolio" content="Olya Skachkov portfolio site">
   <meta name="description" content="Olya Skachkov, UX/UI designer based in Philadelphia, PA, portfolio">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
   <title>Olya Skachkov, UX/UI designer in Philadelphia, PA, portfolio.</title>
+  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;1,100;1,300;1,400&display=swap" rel="stylesheet">
 </head>
 
 <body>
@@ -13,6 +19,9 @@
   <header>
 
     <div class="container">
+      <picture>
+        <img src="images/personal-logo.svg" alt="Olya Skachkov personal logo">
+      </picture>
 
       <nav>
         <ul>
@@ -27,23 +36,27 @@
   <main>
     <div class="section-welcome">
       <div class="container">
+        <div class="text">
         <h1>Hi, welcome to my case studies!</h1>
         <p>Browse my work here</p>
+        </div>
       </div>
     </div>
 
           <div class="column">
-            <h3>Olive</h3>
+            <h1><span>Olive<span></h1>
             <div class="container">
               <picture>
                 <source srcset="images/olivelogo.png" media="(max-width:767px)">
                   <img src="images/olivelogo.png" alt="Olive logo">
               </picture>
             </div>
+            <div class="text">
             <p>Olive is an app that is designed to enable users to take charge of their mental health by equipping them with a licensed therapist,
               a community that understands what they are going through, as well as a learning tab, daily journaling, and daily mood inputting.</p>
             <p>This app was developed using user-centered design and Adobe XD and Adobe Illustrator.</p>
-            <a href="Olive.html">read more</a>
+            <a href="Olive.html" class="button">read more</a>
+            </div>
           </div>
 
   </main>
