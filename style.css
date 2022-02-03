@@ -6,7 +6,7 @@ brown:#7F6657
 grey:#948F88
 sage green:#6E7A70
 tan:#D1B48C
-rust:#AC6849
+orange:#FF4E16
 */
 
 body {
@@ -47,7 +47,7 @@ h4 {
 }
 
 a {
-  color: #AC6849;
+  color: #FF4E16;
   text-decoration: none;
 }
 
@@ -62,5 +62,16 @@ a: focus {
 }
 
 a:active {
-  color: #AC6849;
+  color: #FF4E16;
+}
+
+.button{
+  display:inline-block;
+  background-color:#FF4E16;
+  color: #FFFFFF;
+  font-weight:400;
+  padding:10px;
+  border-radius:50px;
+  border-bottom:2px solid #FF4E16;
+  transition:0.2s opacity;
 }
