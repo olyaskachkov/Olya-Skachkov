@@ -4,10 +4,31 @@ white: #EDEDEB
 black:#262524
 brown:#7F6657
 grey:#948F88
-sage green:#6E7A70
+lighter grey: #D1D1D1
+sage green:#9FA38F
+dark green: #393F27
 tan:#D1B48C
 orange:#FF4E16
+#FE762F
 */
+* {
+  box-sizing:border-box;
+}
+
+header {
+  background-color: #9FA38F;
+  text-align: center;
+  padding: 10px 0;
+  position: fixed;
+  width: 100%;
+  -webkit-box-shadow: -1px 7px 11px 0px rgba(50, 50, 50, 0.31);
+  -moz-box-shadow:    -1px 7px 11px 0px rgba(50, 50, 50, 0.31);
+  box-shadow:         -1px 7px 11px 0px rgba(50, 50, 50, 0.31);
+}
+
+main {
+  padding-top: 133px;
+}
 
 body {
   background-color:#EDEDEB;
@@ -28,12 +49,14 @@ h1, h2, h3, h4 {
 
 h1 {
   font-size: 2.75em;
-  font-weight:700;
+  font-weight:300;
+  text-align: center;
 }
 
 h2 {
   font-size: 2.23em;
   font-weight: 700;
+  text-align: center;
 }
 
 h3 {
@@ -47,7 +70,7 @@ h4 {
 }
 
 a {
-  color: #FF4E16;
+  color: ##FE762F;
   text-decoration: none;
 }
 
@@ -62,17 +85,17 @@ a: focus {
 }
 
 a:active {
-  color: #FF4E16;
+  color: #FE762F;
 }
 
 .button {
   display:inline-block;
-  background-color:#FF4E16;
+  background-color:#FE762F;
   color: #FFFFFF;
   font-weight:400;
   padding:10px;
   border-radius:50px;
-  border-bottom:2px solid #FF4E16;
+  border-bottom:2px solid #FE762F;
   transition:0.2s opacity;
 }
 
@@ -82,7 +105,7 @@ a:active {
 }
 
 .button:active {
-  color: #FF4E16;
+  color: #FE762F;
 }
 
 .button.contact {
@@ -99,4 +122,64 @@ a:active {
 
 .button.contact:active {
   color: #FFFFFF;
+}
+/* layout styling */
+.container {
+  padding: 0 15px;
+}
+
+.row{
+  margin:25px 0;
+}
+
+#hero h1 {
+  text-align: center;
+  color:#FFFFFF;
+}
+
+.logo{
+  max-width: 250px;
+}
+
+nav {
+  display: inline-block;
+  width: 100%;
+}
+
+nav > ul > li {
+  list-style-type: none;
+  padding: 0;
+  display: inline-block;
+}
+
+nav > ul > li {
+  padding: 0 15px;
+  text-transform: uppercase;
+  font-weight: 300;
+  color: #393F27;
+}
+
+nav > ul > li > a: visited {
+  color: #393F27
+}
+
+nav > ul > li > a: hover a: focus {
+  color: #393F27;
+  text-decoration: underline;
+}
+
+nav > ul > li > a: active {
+  color: #FE762F;
+}
+
+#hero {
+  background-color:#9FA38F;
+  padding: 2px 0;
+  display: inline-block;
+  width: 100%;
+}
+
+footer {
+  background-color: #9FA38F;
+  padding-top: 10px;
 }
