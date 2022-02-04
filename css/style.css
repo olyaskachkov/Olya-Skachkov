@@ -40,7 +40,7 @@ body {
 }
 
 img {
-  width:100%;
+  width:100%
 }
 
 h1, h2, h3, h4 {
@@ -55,27 +55,27 @@ h1 {
 
 h2 {
   font-size: 2.23em;
-  font-weight: 300;
+  font-weight: 700;
   text-align: center;
 }
 
 h3 {
   font-size: 1.75em;
-  font-weight: 300;
+  font-weight: 400;
 }
 
 h4 {
   font-size: 1.35em;
-  font-weight: 300;
+  font-weight: 400;
 }
 
 a {
-  color: #FFFFFF;
+  color: ##FE762F;
   text-decoration: none;
 }
 
 a:visited {
-  color: #FFFFFF;
+  color: #262524;
 }
 
 a:hover,
@@ -92,10 +92,10 @@ a:active {
   display:inline-block;
   background-color:#FE762F;
   color: #FFFFFF;
-  font-weight:300;
-  padding:10px 40px;
+  font-weight:400;
+  padding:10px;
   border-radius:50px;
-  border-bottom:6px solid #FE762F;
+  border-bottom:2px solid #FE762F;
   transition:0.2s opacity;
 }
 
@@ -160,7 +160,7 @@ nav > ul > li {
 }
 
 nav > ul > li > a: visited {
-  color: #393F27;
+  color: #393F27
 }
 
 nav > ul > li > a: hover a: focus {
