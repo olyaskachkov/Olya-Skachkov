@@ -27,7 +27,7 @@ header {
 }
 
 main {
-  padding-top: 165px;
+  padding-top: 180px;
 }
 
 body {
@@ -58,7 +58,6 @@ display: block;
 font-size: 50%;
 margin-top: 1em;
 }
-
 
 h2 {
   font-size: 2.23em;
@@ -104,6 +103,7 @@ a:active {
   border-radius:50px;
   border-bottom:6px solid #FE762F;
   transition:0.2s opacity;
+  transition: 0.2s; opacity;
 }
 
 .button:hover {
@@ -120,6 +120,7 @@ a:active {
   color: #FFFFFF;
   text-transform: uppercase;
   border:2px solid #262524;
+  transition: 0.2s; opacity;
 }
 
 .button.contact:hover {
@@ -204,11 +205,108 @@ footer {
   max-width: 3em;
 }
 
-.social svg > ul {
-  list-style-type: none;
-  padding: 0;
+.social ul {
+padding: 0;
+list-style-type: none;
 }
 
-.social svg > ul > li {
+.social {
   display: inline-block;
+  margin: 0 10px;
+}
+
+@keyframes color-change {
+  0% {fill: #edc655;}
+  50% {fill: #fcffad;}
+  100% {fill: #f76414;}
+}
+
+.sun {
+  animation: 4s color-change infinite alternate linear;
+}
+
+@keyframes cloud-move {
+  from {transform: translate(0,50px);}
+  to {transform: translate(200px,50px);}
+}
+
+.cloud-front {
+  animation: 20s cloud-move infinite alternate linear;
+}
+
+@keyframes cloud-move-reverse {
+  from {transform: translate(446px,48px);}
+  to {transform: translate(100px,48px);}
+}
+
+.cloud-back{
+  animation: 34s cloud-move-reverse infinite alternate linear;
+}
+
+/* medium devices 640px and larger */
+@media only screen and (min-width:640px){
+  header {
+    text-align: unset;
+    padding: 20px 0 13px;
+  }
+
+  nav {
+    width: auto;
+    float: right;
+    margin-top: 4px;
+  }
+
+  main {
+    padding-top: 99px;
+    font-size: 18px;
+  }
+
+  #hero span {
+    display: block;
+  }
+
+  .col-md-6 {
+    width: 50%;
+  }
+
+  [class*="col-"] {
+    float: left;
+    padding: 15px;
+  }
+  .row::after{
+    content: "";
+    clear: both;
+    display: table;
+  }
+
+  #about-page h3 {
+    margin-top: 0;
+  }
+
+}
+/* large devices 1024px and larger */
+@media only screen and (min-width: 1024px){
+  .col-lg-7 {
+    width: 60%;
+  }
+
+  .col-lg-5 {
+    width: 40%;
+  }
+
+  .container {
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+}
+
+/* extra large devices 1440px and larger */
+@media only screen and (min-width: 1440px){
+  .container {
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+  }
 }
