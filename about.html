@@ -12,6 +12,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;1,100;1,300;1,400&display=swap" rel="stylesheet">
+
 </head>
 
 <body id="about-page">
@@ -19,8 +20,9 @@
   <header>
 
     <div class="container">
+      <div class="navtoggle" id="myNavtoggle">
       <picture>
-          <a href="index.html"><img src="images/logo-olya.svg" class="logo" alt="Olya Skachkov personal logo"></a>
+          <a href="index.html"><img src="images/logo-olya.svg" class="logo" alt="Olya Skachkov personal logo"></a></li>
       </picture>
 
       <nav>
@@ -28,8 +30,10 @@
           <li><a href="index.html">work</a></li>
           <li><a href="about.html">about</a></li>
           <li><a href="#contact">contact</a></li>
+          <li><a href="javascript:void(0);" class="icon" onclick="menuToggle()"><i class="fa-solid fa-bars"></i>
         </ul>
       </nav>
+    </div>
     </div>
   </header>
 
@@ -137,6 +141,11 @@
       <p class="copy">copyright Olya Skachkov 2022</p>
     </div>
   </footer>
+
+  <script
+    src="https://code.jquery.com/jquery-3.6.0.min.js"
+    integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+    crossorigin="anonymous"></script>
 
 <script src="js/scripts.js"></script>
 </body>
