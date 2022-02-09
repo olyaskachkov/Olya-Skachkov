@@ -42,7 +42,7 @@ header {
 }
 
 .navtoggle.responsive li {
-  display: block; 
+  display: block;
 }
 
 main {
@@ -176,12 +176,32 @@ a:active {
 
 #hero h1 {
   text-align: center;
-  color:#FFFFFF;
+  color:#FAFAFA;
 }
 
 .logo{
   max-width: 80px;
 }
+
+.olive-image {
+  max-width: 490px;
+}
+
+.olive-hero-image {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+
+.aboutmepic {
+  max-width: 500px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+
 
 nav {
   margin-top: 1em;
