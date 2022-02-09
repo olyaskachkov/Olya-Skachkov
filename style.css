@@ -329,6 +329,11 @@ list-style-type: none;
     display: inline-block;
   }
 
+  .navtoggle li:last-child {
+display: none;
+}
+
+
 
   .logo {
     max-width: 125px;
