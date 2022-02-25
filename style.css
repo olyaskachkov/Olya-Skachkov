@@ -118,14 +118,13 @@ a:visited {
   color: #FFFFFF;
 }
 
-a:hover,
-a: focus {
+a:hover a: focus {
   color: #262524;
   text-decoration: underline;
 }
 
 a:active {
-  color: ##D14901;
+  color: #D14901;
 }
 
 .button {
@@ -137,7 +136,6 @@ a:active {
   border-radius:50px;
   border-bottom:6px solid #D14901;
   transition:0.2s opacity;
-  transition: 0.2s; opacity;
 }
 
 .button:hover {
